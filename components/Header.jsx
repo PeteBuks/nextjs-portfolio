@@ -42,11 +42,11 @@ const Header = () => {
             <Link href="/" className='flex'>
                 <Image 
                     src="/assets/images/petebuks_transparent.png"
-                    width={60}
-                    height={60}
+                    width={50}
+                    height={50}
                     alt='logo'
                 />
-                <h1 className='text-7xl font-semibold text-accent rounded-full'>.</h1>
+                <h1 className='text-5xl font-semibold text-accent rounded-full'>.</h1>
             </Link>
 
              {/* Desktop nav */}
@@ -62,8 +62,8 @@ const Header = () => {
         
             <div className='xl:hidden'>
                 <button className= "inline-block w-[20px] items-center" onClick={handleClick}>
-                    <div className={`w-[100%] h-[2px] bg-primary mb-[2px] transform ease-[cubic-bezier(0.28, 0.55, 0.385, 1.65)] duration-300 ${ isClicked ? "translate-y-[6.3px] rotate-45" : ""}`}></div>
-                    <div className={`w-[100%] h-[2px] bg-primary transform ease-[cubic-bezier(0.28, 0.55, 0.385, 1.65)] duration-300 ${ isClicked ? "translate-y-[-6.3px] -rotate-45" : ""}`}></div>
+                    <div className={`w-[100%] h-[2px] bg-primary mb-[7px] transform ease-[cubic-bezier(0.28, 0.55, 0.385, 1.65)] duration-300 ${ isClicked ? "translate-y-[4.5px] rotate-45 h-[2px]" : ""}`}></div>
+                    <div className={`w-[100%] h-[2px] bg-primary transform ease-[cubic-bezier(0.28, 0.55, 0.385, 1.65)] duration-300 ${ isClicked ? "translate-y-[-4.5px] -rotate-45 h-[2px]" : ""}`}></div>
                      
                 </button>
             </div>
