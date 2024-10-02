@@ -28,7 +28,7 @@ export async function POST(request) {
 
   try {
     const mail = await transport.sendMail({
-      from: username,
+      from: `"Petebuks.pro" <${username}>`,
       to: "iam.peterbuks@gmail.com",
       replyTo: email,
       subject: `${subject}`,
