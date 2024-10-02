@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body{
+    @apply font-primary text-primary leading-loose;
+  } 
+
+  .bg_gradient {
+    height: fit-content;
+    width: 100%;
+    background-image: radial-gradient(
+        at 27% 37%,
+        hsla(215, 98%, 61%, 1) 0px,
+        transparent 0%
+      ),
+      radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+      radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+      radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+      radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+      radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+      radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+    position: absolute;
+    height: 100%;
+    filter: blur(100px) saturate(150%);
+    opacity: 0.15;
+    z-index: -1;
+  }
+
+  h1{
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold
+  }
+
+  h2{
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold
+  }
+
+  h3{
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold
+  }
+
+}
+
+@layer components {
+  
+/* Preloader Animation */
+.loader {
+  border-right: 3px solid transparent;
+  @apply w-[48px] h-[48px] rounded-[50%] inline-block border-t-[3px] border-t-accent border-r-[3px] box-border animate-spin
+}
+
+.frosty_glass {
+  @apply border border-secondary border-opacity-15 bg-[white] bg-opacity-30 rounded-xl backdrop-filter backdrop-blur-[7px] shadow-sm
+}
+
+.bg_gradient_2{
+  height: fit-content;
+  background-image: radial-gradient(
+        at 27% 37%,
+        hsla(215, 98%, 61%, 1) 0px,
+        transparent 0%
+      ),
+      radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+      radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+      radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+      radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+      radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+      radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+    position: absolute;
+    filter: blur(100px) saturate(150%) !important;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+}
+
+.orange_gradient {
+  -webkit-text-fill-color: transparent;
+  @apply bg-gradient-to-r from-[#f49c0b] via-[#eb5c0c] to-[#eab008] bg-clip-text;
+}
+
+.purple_gradient {
+  -webkit-text-fill-color: transparent;
+  @apply bg-gradient-to-r from-[#9532e6] via-[#d9277a] to-[#9647c5] bg-clip-text ;
+}
+
+.text_outline {
+  -webkit-text-stroke: 2px #000;
+}
+
+.text_outline_hover {
+  -webkit-text-stroke: 2px #000;
+}
+
+}
+
+@layer utilities {
+  
+}
