@@ -36,14 +36,14 @@ const Header = () => {
 
   return (
     <header className='py-1 sm:py-2 xl:py-3 text-tertiary'>
-        <div className='container mx-auto flex justify-between items-center sticky'>
+        <div className='container mx-auto flex justify-between items-center'>
 
             {/* Logo */}
             <Link href="/" className='flex'>
                 <Image 
                     src="/assets/images/petebuks_transparent.png"
-                    width={80}
-                    height={80}
+                    width={60}
+                    height={60}
                     alt='logo'
                 />
                 <h1 className='text-7xl font-semibold text-accent rounded-full'>.</h1>
@@ -61,8 +61,8 @@ const Header = () => {
             
         
             <div className='xl:hidden'>
-                <button className= "inline-block w-[30px] items-center" onClick={handleClick}>
-                    <div className={`w-[100%] h-[2px] bg-primary mb-[10px] transform ease-[cubic-bezier(0.28, 0.55, 0.385, 1.65)] duration-300 ${ isClicked ? "translate-y-[6.3px] rotate-45" : ""}`}></div>
+                <button className= "inline-block w-[20px] items-center" onClick={handleClick}>
+                    <div className={`w-[100%] h-[2px] bg-primary mb-[2px] transform ease-[cubic-bezier(0.28, 0.55, 0.385, 1.65)] duration-300 ${ isClicked ? "translate-y-[6.3px] rotate-45" : ""}`}></div>
                     <div className={`w-[100%] h-[2px] bg-primary transform ease-[cubic-bezier(0.28, 0.55, 0.385, 1.65)] duration-300 ${ isClicked ? "translate-y-[-6.3px] -rotate-45" : ""}`}></div>
                      
                 </button>
