@@ -32,10 +32,10 @@ export async function POST(request) {
       to: "iam.peterbuks@gmail.com",
       replyTo: email,
       subject: `${subject}`,
-      html: `<p>Name: ${name} </p>
-             <p>Email: ${email} </p>
-             <p>Phone: ${phone} </p>
-             <p>Message: ${message} </p>`
+      html: `<p>Hello there! My name is ${name} </p>
+             </br>
+             <p>Message: ${message} </p>
+             <p>You an contact me through ${email} or ${phone}</p>`
     });
     return NextResponse.json({ status: 200 })
   } catch (error) {
