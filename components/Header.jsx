@@ -35,7 +35,7 @@ const Header = () => {
     
 
   return (
-    <header className='py-1 sm:py-2 xl:py-3 text-tertiary'>
+    <header className='py-1 sm:py-3 sm:px-3 xl:py-3 text-tertiary'>
         <div className='container mx-auto flex justify-between items-center'>
 
             {/* Logo */}
@@ -46,7 +46,7 @@ const Header = () => {
                     height={50}
                     alt='logo'
                 />
-                <h1 className='text-5xl font-semibold text-accent rounded-full'>.</h1>
+                <h1 className='text-[42px] font-semibold text-accent rounded-full'>.</h1>
             </Link>
 
              {/* Desktop nav */}

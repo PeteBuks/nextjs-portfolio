@@ -36,7 +36,7 @@ const Photo = () => {
                 cy="253"
                 r="253"
                 stroke="#000000"
-                strokeWidth="2"
+                strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 initial= {{strokeDasharray: "24 10 0 0"}}

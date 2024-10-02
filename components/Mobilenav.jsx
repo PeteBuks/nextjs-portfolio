@@ -35,7 +35,7 @@ const MobileNav = () => {
         {links.map((link, index)=>{
             return (
             <Link href={link.path} key={index}
-                className= {`${link.path === pathname && "border-b-[2px] border-primary text-primary"} capitalize font-medium hover:text-primary hover:border-b-[2px] hover:border-primary`}
+                className= {`${link.path === pathname && "border-b-[1.5px] border-primary text-primary"} capitalize font-medium text-sm hover:text-primary hover:border-b-[1.5px] hover:border-primary`}
                 >
                 {link.name}
             </Link>)
