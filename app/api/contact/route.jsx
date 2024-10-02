@@ -28,13 +28,14 @@ export async function POST(request) {
 
   try {
     const mail = await transport.sendMail({
-      from: `"Petebuks.pro" <${username}>`,
+      from: `"Petebuks.pro" <petebukason@gmai.com>`,
       to: "iam.peterbuks@gmail.com",
       replyTo: email,
       subject: `${subject}`,
       html: `<p>Hello there! My name is ${name} </p>
              </br>
-             <p>Message: ${message} </p>
+             </br>
+             <p>${message}</p>
              <p>You an contact me through ${email} or ${phone}</p>`
     });
     return NextResponse.json({ status: 200 })
