@@ -167,7 +167,7 @@ const Resume = () => {
     >
       <div className="container mx-auto">
         <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
-          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-5">
             <TabsTrigger value= "experience">Experience</TabsTrigger>
             <TabsTrigger value= "education">Education</TabsTrigger>
             <TabsTrigger value= "skills">Skills</TabsTrigger>
@@ -182,15 +182,15 @@ const Resume = () => {
           {/* experience */}
           <TabsContent value="experience">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold purple_gradient">{experience.title}</h3>
-              <p className="max-w-[680px] text-tertiary mx-auto xl:mx-0">{experience.description}</p>
+              <h3 className="lg:text-4xl text-2xl font-bold purple_gradient">{experience.title}</h3>
+              <p className="max-w-[680px] text-sm text-tertiary mx-auto xl:mx-0">{experience.description}</p>
 
               <ScrollArea className="h-[400px]">
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                   {experience.items.map((item, index)=>{
                     return <li key={index} className="flex flex-col justify-center items-center lg:items-start h-[184px] py-6 px-10 gap-1 frosty_glass">
                       <span>{item.duration}</span>
-                      <h5 className="font-semibold text-tertiary text-xl max-w-[260px] text-center lg:text-left min-h-[60px]">{item.position}</h5>
+                      <h5 className="font-semibold text-tertiary text-lg max-w-[260px] text-center lg:text-left min-h-[60px]">{item.position}</h5>
                       <div className="flex items-center gap-3">
                         <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                         <p>{item.company}</p>
@@ -206,8 +206,8 @@ const Resume = () => {
           {/* education */}
           <TabsContent value="education">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold purple_gradient">{education.title}</h3>
-              <p className="max-w-[680px] text-tertiary mx-auto xl:mx-0">{education.description}</p>
+              <h3 className="text-2xl lg:text-4xl font-bold purple_gradient">{education.title}</h3>
+              <p className="max-w-[680px] text-sm text-tertiary mx-auto xl:mx-0">{education.description}</p>
 
               <ScrollArea className="h-[400px]">
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
@@ -216,7 +216,8 @@ const Resume = () => {
                       <span>{item.duration}</span>
                       <h5 className="font-semibold text-tertiary text-xl max-w-[260px] text-center lg:text-left min-h-[60px]">{item.degree}</h5>
                       <div className="flex items-center gap-3">
-                      <span className="w-[6px] h-[6px] rounded-full bg-accent"></span><p>{item.institute}</p>
+                      <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                      <p className="text-sm">{item.institute}</p>
                       </div>
                     </li>
                   })}
@@ -229,8 +230,8 @@ const Resume = () => {
           {/* skills */}
           <TabsContent value="skills">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold purple_gradient">{skills.title}</h3>
-              <p className="max-w-[680px] text-tertiary mx-auto xl:mx-0">{skills.description}</p>
+              <h3 className="text-2xl lg:text-4xl font-bold purple_gradient">{skills.title}</h3>
+              <p className="max-w-[680px] text-sm text-tertiary mx-auto xl:mx-0">{skills.description}</p>
 
               <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-center items-center">
                 {skills.skillList.map((skill, index)=>{
@@ -254,14 +255,14 @@ const Resume = () => {
 
           <TabsContent value="about">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold purple_gradient">{about.title}</h3>
-              <p className="max-w-[680px] text-tertiary mx-auto xl:mx-0">{about.description}</p>
+              <h3 className="text-2xl lg:text-4xl font-bold purple_gradient">{about.title}</h3>
+              <p className="max-w-[680px] text-sm text-tertiary mx-auto xl:mx-0">{about.description}</p>
 
               <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                 {about.info.map((item, index)=>{
                   return <li className="flex items-center justify-center xl:justify-start gap-4" key={index}>
-                    <span className="text-tertiary">{item.fieldName}:</span>
-                    <span className="text-xl">{item.fieldValue}</span>
+                    <span className="text-tertiary text-sm">{item.fieldName}:</span>
+                    <span className="text-base">{item.fieldValue}</span>
                   </li>
                 })}
               </ul>

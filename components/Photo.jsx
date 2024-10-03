@@ -16,25 +16,25 @@ const Photo = () => {
                 animate= {{
                 opacity: 1,
                 transition: {delay: 2.4, duration: 0.4, ease: "easeInOut"}}}
-                className="w-[290px] h-[290px] xl:w-[490px] xl:h-[490px] mix-blend-darken absolute">
+                className="w-[250px] h-[250px] xl:w-[450px] xl:h-[450px] mix-blend-darken absolute">
                 <Image 
                     src="/assets/images/pbprofile1_png.png" priority quality={100} fill
                     alt="profile"
-                    className="object-contain rounded-full ml-[7px]"
+                    className="object-contain rounded-full ml-[5px]"
                 />
             </motion.div >
 
             {/* Animated Circle */}
             <motion.svg 
-                className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
+                className="w-[260px] xl:w-[466px] h-[260px] xl:h-[466px]"
                 fill="transparent"
-                viewBox="0 0 506 506"
+                viewBox="0 0 468 468"
                 xmlns="http://w3.org/2000/svg">
 
                 <motion.circle 
-                cx="253"
-                cy="253"
-                r="253"
+                cx="233"
+                cy="233"
+                r="233"
                 stroke="#000000"
                 strokeWidth="1.5"
                 strokeLinecap="round"

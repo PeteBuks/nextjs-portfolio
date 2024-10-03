@@ -72,9 +72,7 @@ const Header = () => {
 
         {/* Mobile dropdown */}
         
-
-        
-        <div className={`xl:hiiden opacity-0 transition-all duration-300 transform ${isClicked ?  "pt-10 block opacity-100 h-[90vh] translate-y-[0vh]"  : "h-[0px] translate-y-[-80vh]"}`}>
+        <div className={`xl:hiiden opacity-0 transition-all duration-300 transform ${isClicked ?  "pt-10 block opacity-100 h-[40vh] translate-y-[0vh]"  : "h-[0px] translate-y-[-40vh]"}`}>
             <MobileNav
               onClick={isClicked}
               className="">
