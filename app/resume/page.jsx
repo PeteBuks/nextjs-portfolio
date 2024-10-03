@@ -214,7 +214,7 @@ const Resume = () => {
                   {education.items.map((item, index)=>{
                     return <li key={index} className="flex flex-col justify-center items-center lg:items-start h-[184px] py-6 px-10 gap-1 frosty_glass">
                       <span>{item.duration}</span>
-                      <h5 className="font-semibold text-tertiary text-xl max-w-[260px] text-center lg:text-left min-h-[60px]">{item.degree}</h5>
+                      <h5 className="font-semibold text-tertiary text-lg max-w-[260px] text-center lg:text-left min-h-[60px]">{item.degree}</h5>
                       <div className="flex items-center gap-3">
                       <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                       <p className="text-sm">{item.institute}</p>
